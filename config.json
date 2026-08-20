@@ -1,0 +1,9 @@
+{
+  "target": "f",
+  "is_mouse": false,
+  "mode": "rapid",
+  "delay": 0.05,
+  "humanize": true,
+  "jitter_amount": 0.015,
+  "toggle_hotkey_vk": 117
+}

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="thread-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="480" fill="url(#thread-bg)" rx="16"/>
+  <rect width="956" height="476" x="2" y="2" fill="none" stroke="#1d3866" stroke-width="1.5" rx="15"/>
+
+  <!-- Title -->
+  <text x="480" y="45" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#00f3ff" text-anchor="middle" letter-spacing="2">
+    CONCURRENT THREADING &amp; ISOLATION MODEL
+  </text>
+  <text x="480" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    Independent worker threads guarantee 0fps frame drops in game and 0ms UI lag
+  </text>
+
+  <!-- 3 Thread Columns -->
+  <!-- Thread 1: Main / Tkinter UI Thread -->
+  <g transform="translate(60, 105)">
+    <rect width="260" height="330" rx="12" fill="#0c1833" stroke="#00f3ff" stroke-width="1.5"/>
+    <rect width="260" height="45" rx="12" fill="#00f3ff" fill-opacity="0.15"/>
+    <text x="130" y="28" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#00f3ff" text-anchor="middle">Thread 1: Main (Tkinter)</text>
+    
+    <g transform="translate(20, 65)">
+      <rect width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Overlay Render Loop</text>
+
+      <rect y="55" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="81" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Mouse Drag &amp; Drop</text>
+
+      <rect y="110" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="136" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Magnetic Snap Math</text>
+
+      <rect y="165" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="191" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Settings Profile Modal</text>
+    </g>
+
+    <text x="130" y="310" font-family="Consolas, monospace" font-size="11" fill="#00f3ff" text-anchor="middle">Event-Driven (0% CPU Idle)</text>
+  </g>
+
+  <!-- Thread 2: Automation Worker Thread -->
+  <g transform="translate(350, 105)">
+    <rect width="260" height="330" rx="12" fill="#0c1833" stroke="#00ffaa" stroke-width="1.5"/>
+    <rect width="260" height="45" rx="12" fill="#00ffaa" fill-opacity="0.15"/>
+    <text x="130" y="28" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#00ffaa" text-anchor="middle">Thread 2: Engine Loop</text>
+    
+    <g transform="translate(20, 65)">
+      <rect width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Hardware SendInput()</text>
+
+      <rect y="55" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="81" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">1ms High-Res Sleep Timer</text>
+
+      <rect y="110" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="136" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Gaussian Jitter Engine</text>
+
+      <rect y="165" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="191" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">DirectInput Scancode E0</text>
+    </g>
+
+    <text x="130" y="310" font-family="Consolas, monospace" font-size="11" fill="#00ffaa" text-anchor="middle">Daemon Worker Thread</text>
+  </g>
+
+  <!-- Thread 3: Tray & Hotkey Monitor -->
+  <g transform="translate(640, 105)">
+    <rect width="260" height="330" rx="12" fill="#0c1833" stroke="#ff00ea" stroke-width="1.5"/>
+    <rect width="260" height="45" rx="12" fill="#ff00ea" fill-opacity="0.15"/>
+    <text x="130" y="28" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#ff00ea" text-anchor="middle">Thread 3: Tray &amp; Hotkeys</text>
+    
+    <g transform="translate(20, 65)">
+      <rect width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="26" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Win32 Message Loop</text>
+
+      <rect y="55" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="81" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Shell_NotifyIconW Context</text>
+
+      <rect y="110" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="136" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">F6 GetAsyncKeyState</text>
+
+      <rect y="165" width="220" height="42" rx="6" fill="#070f20" stroke="#1d3866" stroke-width="1"/>
+      <text x="15" y="191" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Graceful App Shutdown</text>
+    </g>
+
+    <text x="130" y="310" font-family="Consolas, monospace" font-size="11" fill="#ff00ea" text-anchor="middle">Native Background Thread</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="arch-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="480" fill="url(#arch-bg)" rx="16"/>
+  <rect width="956" height="476" x="2" y="2" fill="none" stroke="#1d3866" stroke-width="1.5" rx="15"/>
+
+  <!-- Title -->
+  <text x="480" y="45" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#00f3ff" text-anchor="middle" letter-spacing="2">
+    CORE MODULAR ARCHITECTURE
+  </text>
+  <text x="480" y="72" font-family="'Segoe UI', sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    Clean decoupling: Hardware Drivers, Timing Engines, State Handlers &amp; Native Win32 Shell
+  </text>
+
+  <!-- Top Level: Entry Point -->
+  <g transform="translate(330, 95)">
+    <rect width="300" height="55" rx="10" fill="#0c1833" stroke="#00f3ff" stroke-width="2"/>
+    <text x="150" y="28" font-family="Consolas, monospace" font-size="16" font-weight="800" fill="#00f3ff" text-anchor="middle">main.py</text>
+    <text x="150" y="46" font-family="'Segoe UI', sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Orchestration • Config • DPI Awareness</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <path d="M 480 150 L 480 185 M 480 185 L 170 185 L 170 210 M 480 185 L 380 185 L 380 210 M 480 185 L 580 185 L 580 210 M 480 185 L 790 185 L 790 210" stroke="#1d3866" stroke-width="2" fill="none"/>
+
+  <!-- 4 Core Submodules -->
+  <!-- 1. AutoClicker Engine -->
+  <g transform="translate(60, 210)">
+    <rect width="220" height="120" rx="10" fill="#0c1833" stroke="#00ffaa" stroke-width="1.5"/>
+    <text x="110" y="30" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#00ffaa" text-anchor="middle">auto_clicker.py</text>
+    <line x1="20" y1="42" x2="200" y2="42" stroke="#1d3866" stroke-width="1"/>
+    <text x="25" y="62" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Multi-Mode Engine</text>
+    <text x="25" y="80" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Rapid / Burst / Hold</text>
+    <text x="25" y="98" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Anti-Cheat Gaussian Jitter</text>
+  </g>
+
+  <!-- 2. Hardware Input Driver -->
+  <g transform="translate(290, 210)">
+    <rect width="210" height="120" rx="10" fill="#0c1833" stroke="#00f3ff" stroke-width="1.5"/>
+    <text x="105" y="30" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#00f3ff" text-anchor="middle">hardware_input.py</text>
+    <line x1="20" y1="42" x2="190" y2="42" stroke="#1d3866" stroke-width="1"/>
+    <text x="25" y="62" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• DirectInput Scancodes</text>
+    <text x="25" y="80" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Kernel timeBeginPeriod(1)</text>
+    <text x="25" y="98" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Zero GC Ctypes Structs</text>
+  </g>
+
+  <!-- 3. Overlay UI -->
+  <g transform="translate(510, 210)">
+    <rect width="200" height="120" rx="10" fill="#0c1833" stroke="#ff00ea" stroke-width="1.5"/>
+    <text x="100" y="30" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#ff00ea" text-anchor="middle">overlay_ui.py</text>
+    <line x1="20" y1="42" x2="180" y2="42" stroke="#1d3866" stroke-width="1"/>
+    <text x="25" y="62" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• 50x50 Magnetic HUD</text>
+    <text x="25" y="80" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• 4-Edge Snap Algorithm</text>
+    <text x="25" y="98" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Realtime Color Themes</text>
+  </g>
+
+  <!-- 4. Tray Manager -->
+  <g transform="translate(720, 210)">
+    <rect width="180" height="120" rx="10" fill="#0c1833" stroke="#facc15" stroke-width="1.5"/>
+    <text x="90" y="30" font-family="Consolas, monospace" font-size="14" font-weight="800" fill="#facc15" text-anchor="middle">tray_manager.py</text>
+    <line x1="15" y1="42" x2="165" y2="42" stroke="#1d3866" stroke-width="1"/>
+    <text x="20" y="62" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Shell_NotifyIconW</text>
+    <text x="20" y="80" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• 64-bit WndProc Loop</text>
+    <text x="20" y="98" font-family="'Segoe UI', sans-serif" font-size="11" fill="#cbd5e1">• Context Menu &amp; Exit</text>
+  </g>
+
+  <!-- Bottom Hardware / OS Layer -->
+  <g transform="translate(60, 360)">
+    <rect width="840" height="80" rx="10" fill="#060c18" stroke="#1d3866" stroke-width="1.5"/>
+    <text x="420" y="32" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#00f3ff" text-anchor="middle" letter-spacing="1">
+      WINDOWS KERNEL &amp; HARDWARE SUBSYSTEMS (USER32 / KERNEL32 / SHELL32)
+    </text>
+    <text x="420" y="58" font-family="Consolas, monospace" font-size="12" fill="#64748b" text-anchor="middle">
+      SendInput(INPUT_KEYBOARD)  •  GetAsyncKeyState()  •  timeBeginPeriod(1)  •  SetProcessDpiAwareness(2)
+    </text>
+  </g>
+</svg>

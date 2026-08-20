@@ -1,0 +1,9 @@
+{
+  "target": "space",
+  "is_mouse": false,
+  "mode": "rapid",
+  "delay": 0.43,
+  "humanize": true,
+  "jitter_amount": 0.012,
+  "toggle_hotkey_vk": 117
+}
