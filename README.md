@@ -1,4 +1,4 @@
-\<div align="center">
+<div align="center">
 
 <!-- Animated Waving Neon Header -->
 <p align="center">
